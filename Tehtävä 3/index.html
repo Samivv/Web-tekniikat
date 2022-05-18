@@ -28,16 +28,19 @@
     <div class="taustavarinvaihto">
         <label for="vari">Valitse sivun taustaväri: <input type="color" name="vari" id="varipyora">(vaihtuu kun klikkaat muualta)</label>
     </div>
-    <div class="generoitusisalto">
-        <span class="tekstilaatikko">
-            Kokeila painaa jotain näppäimistössä!
-        </span>
-    </div>
+    <div class="apicontainer">
         <form id="api">
+            <label for="text">Arvioidaan ikäsi nimen perusteella, käyttäen agify.io API:a</label>
             <input type="text" class="mitaLisataan">
             <input type="submit" id="button" value="Lähetä pyyntö">
+            <p id="vastaus"></p>
         </form>
-
+    </div>
+        <div class="generoitusisalto">
+            <span class="tekstilaatikko">
+                <strong>Kokeila painaa jotain näppäimistössä!</strong>
+            </span>
+        </div>
 
     <script src="js.js"></script>
 </body>

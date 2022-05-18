@@ -33,6 +33,24 @@ button {
     background-color: inherit;
 }
 
-form {
-    padding: 50px;
+
+
+#api {
+    border: 3px solid black; 
+    margin-top: 10px;
+}
+#button {
+    padding: 10px;
+    background-color: orange;
+    margin: 5px;
+}
+
+.generoitusisalto {
+    margin-top: 50px;
+    color: rgb(27, 14, 14);
+    font-size: large;
+
+}
+#vastaus {
+    padding: 10px;
 }

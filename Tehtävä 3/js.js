@@ -38,10 +38,6 @@ function funktio9() {
     }
 }
 
-function funktioForm(e) {
-    e.preventDefault();
-    console.log(document.querySelector(".mitaLisataan").value);
-}
 
 // Väripyörällä valitaan sivun taustaväri
 function funktio7() {
@@ -61,16 +57,11 @@ function funktio5() {
 function funktio6() {
     h1.style.fontSize = "";
 }
+let ok;
 
-// Rest API käyttö
-
-
-const pyynto = new XMLHttpRequest();
-pyynto.open("GET", "tiedot.json");
-pyynto.send();
-pyynto.onload = () => {
-    console.log(pyynto);
-    if(pyynto.status === 200) {
-        console.log(JSON.parse(pyynto.response));
-    }
+function funktioForm(e) {
+    e.preventDefault();
+    fetch("https://api.agify.io/?name="+document.querySelector(".mitaLisataan").value)
+    .then(response => response.json())
+    .then(data => document.getElementById("vastaus").innerText = "Ikäsi on agify:n mukaan " + (data.age));
 }
