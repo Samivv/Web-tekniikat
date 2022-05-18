@@ -57,8 +57,7 @@ function funktio5() {
 function funktio6() {
     h1.style.fontSize = "";
 }
-let ok;
-
+// API haku ja tulostus
 function funktioForm(e) {
     e.preventDefault();
     fetch("https://api.agify.io/?name="+document.querySelector(".mitaLisataan").value)
