@@ -13,6 +13,8 @@ h1.addEventListener("mouseover", funktio5);
 h1.addEventListener("mouseout", funktio6);
 listener5.addEventListener("change", funktio7);
 document.querySelector("body").addEventListener("keypress", funktio8);
+let formListener = document.getElementById("api");
+formListener.addEventListener("submit", funktioForm);
 
 // Lisätään elementti ja lisätään siihen tekstiä, sekä poistetaan poisto-napin esto.
 function funktio1() {
@@ -36,6 +38,10 @@ function funktio9() {
     }
 }
 
+function funktioForm(e) {
+    e.preventDefault();
+    console.log(document.querySelector(".mitaLisataan").value);
+}
 
 // Väripyörällä valitaan sivun taustaväri
 function funktio7() {
