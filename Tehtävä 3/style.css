@@ -25,3 +25,14 @@ button {
     padding: 5px;
     background: grey;
 }
+.teeJotain {
+    display:inline-block;
+}
+.mitaLisataan {
+    height:65%;
+    background-color: inherit;
+}
+
+form {
+    padding: 50px;
+}

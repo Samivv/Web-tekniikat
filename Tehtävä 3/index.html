@@ -9,31 +9,35 @@
     <title>Web-tekniikat tehtävä</title>
 </head>
 <body>
-    <h1>Tehtävä 3 (vedä hiiri tähän)</h1>
+    
         <div class="vaatimukset">
+            <h1>Tehtävä 3 (vedä hiiri tähän)</h1>
             <ul>
-                <li>Interaktion hyödyntäminen eli eventtien käyttö</li>
+                <p>Tällä sivulla demonstroidaan:</p>
+                <li>interaktion hyödyntämistä, eli eventtien käyttö</li>
                 <li>Sivun sisällön dynaaminen muokkaus kuten ulkoasun tai sisällön manipulointi</li>
                 <li>REST-palvelun hyödyntäminen (jokin muu kuin tunneilla käytetty esimerkki)</li>
             </ul>
         </div>
         <div class="napit">
         <button id="nappi1">Lisää elementti</button>
-        <button id="nappi2">Poista elementti</button>
-        <button id="nappi3">Suurenna sivun tekstien kokoa</button>
-        <button id="nappi4">Name 4</button>
-        <button id="nappi5">Name 5</button>
+        <button id="nappi2" disabled>Poista elementti</button>
+        <input type="range" id="range" min="1" max = "3">
+        <label for="range"><= Siirrä sivun sisältöä käyttäen tätä</label>
     </div>
     <div class="taustavarinvaihto">
         <label for="vari">Valitse sivun taustaväri: <input type="color" name="vari" id="varipyora">(vaihtuu kun klikkaat muualta)</label>
     </div>
     <div class="generoitusisalto">
         <span class="tekstilaatikko">
-
+            Kokeila painaa jotain näppäimistössä!
         </span>
-
-
-
+    </div>
+    <div class="form">
+        <form action="teejotain">
+            <input type="text" class="mitaLisataan">
+            <button type="submit">Lähetä API - pyyntö</button>
+        </form>
     </div>
 
     <script src="js.js"></script>
