@@ -61,3 +61,16 @@ function funktio5() {
 function funktio6() {
     h1.style.fontSize = "";
 }
+
+// Rest API käyttö
+
+
+const pyynto = new XMLHttpRequest();
+pyynto.open("GET", "tiedot.json");
+pyynto.send();
+pyynto.onload = () => {
+    console.log(pyynto);
+    if(pyynto.status === 200) {
+        console.log(JSON.parse(pyynto.response));
+    }
+}
