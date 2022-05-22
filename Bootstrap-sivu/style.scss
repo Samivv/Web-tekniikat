@@ -1,0 +1,62 @@
+body {
+    background-image: url(media/beach.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 27px rgba(147, 150, 150, 1);
+}
+div *:not(footer *, nav *) {
+    font-size: 30px;
+}
+.nav-link,[class="nav-link active"],.nav-item {
+    color: white!important;
+    font-size: 27px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.nav-item {
+    margin-right: 15px;
+    margin-left: 15px;
+    
+}
+.nav-item:hover {
+    border-bottom: 1px solid black;
+}
+.bg1 {
+    background-color: #038C8C;
+}
+.bg2 {
+    background-color: #A67D32;
+}
+.bg3 {
+    background-color: #BFA004;
+}
+.navbar-brand {
+    font-size: 45px;
+    font-weight: lighter;
+    opacity: 50%;
+    user-select:none;
+    pointer-events: none;
+}
+[class="navbar rounded navbar-expand-lg bg1"] {
+    border: 8px outset #038C8C;
+}
+#eka {
+    border: 8px inset #038C8C;
+}
+#eka:nth-child(even){
+    border: 8px outset #038C8C;
+}
+
+footer {
+    border-top: 8px outset #038C8C;
+    color:white;
+}
+.eiLinkki {
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
