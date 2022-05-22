@@ -3,15 +3,20 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   /* font-family: 'Courier New', Courier, monospace; */
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-shadow: 1px 1px 27px rgb(147, 150, 150);
+}
+
+.accordion-item, .accordion-header {
+  background-color: #038C8C;
+  font-size: 25px;
 }
 
 div *:not(footer *, nav *) {
   font-size: 30px;
 }
 
-.nav-link + [class="nav-link active"], .nav-item {
+.nav-link, [class="nav-link active"], .nav-item {
   color: white !important;
   font-size: 27px;
   margin-bottom: 5px;

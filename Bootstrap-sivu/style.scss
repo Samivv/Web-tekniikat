@@ -1,12 +1,19 @@
+$font-stack: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 body {
     background-image: url(media/beach.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* font-family: 'Courier New', Courier, monospace; */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font: $font-stack;
     text-shadow: 1px 1px 27px rgba(147, 150, 150, 1);
 }
-$radius: 3px;
+@mixin theme($theme: vaalSin) {
+    background-color:#038C8C;
+    font-size: 25px;
+}
+.accordion-item, .accordion-header {
+    @include theme($theme: vaalSin);
+}
 div *:not(footer *, nav *) {
     font-size: 30px;
 }
@@ -19,7 +26,6 @@ div *:not(footer *, nav *) {
 .nav-item {
     margin-right: 15px;
     margin-left: 15px;
-    
 }
 .nav-item:hover {
     border-bottom: 1px solid black;
@@ -61,6 +67,3 @@ a {
     text-decoration: none;
     color:white;
 }
-@mixin rounded {
-    border-radius: $radius;
-  }
