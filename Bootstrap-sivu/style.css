@@ -11,7 +11,7 @@ div *:not(footer *, nav *) {
   font-size: 30px;
 }
 
-.nav-link, [class="nav-link active"], .nav-item {
+.nav-link + [class="nav-link active"], .nav-item {
   color: white !important;
   font-size: 27px;
   margin-bottom: 5px;
@@ -71,10 +71,6 @@ footer {
 a {
   text-decoration: none;
   color: white;
-}
-
-h1 {
-  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

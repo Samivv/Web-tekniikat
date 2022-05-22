@@ -6,6 +6,7 @@ body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 1px 1px 27px rgba(147, 150, 150, 1);
 }
+$radius: 3px;
 div *:not(footer *, nav *) {
     font-size: 30px;
 }
@@ -60,3 +61,6 @@ a {
     text-decoration: none;
     color:white;
 }
+@mixin rounded {
+    border-radius: $radius;
+  }
