@@ -36,15 +36,23 @@ div *:not(footer *, nav *) {
     font-size: 45px;
     font-weight: lighter;
     opacity: 50%;
+    user-select:none;
+    pointer-events: none;
 }
-#eka,[class="navbar rounded navbar-expand-lg bg1"] {
+[class="navbar rounded navbar-expand-lg bg1"] {
     border: 8px outset #038C8C;
 }
+#eka {
+    border: 8px inset #038C8C;
+}
+#eka:nth-child(even){
+    border: 8px outset #038C8C;
+}
+
 footer {
     border-top: 8px outset #038C8C;
     color:white;
 }
 .eiLinkki {
     text-decoration: none;
-    color: white;
 }
