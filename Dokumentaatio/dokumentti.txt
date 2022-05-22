@@ -1,0 +1,13 @@
+Desktop: https://wireframe.cc/IbKCnn
+
+Mobile: https://wireframe.cc/1Hw6II
+
+
+Sivulla käytettävät värit on valittu taustakuvasta saadusta värikartasta.(Adobe)
+#BFA004
+#A67D32
+#038C8C
++ valkoinen ja musta
+font: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
+
